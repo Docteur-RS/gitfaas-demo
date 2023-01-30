@@ -1,0 +1,10 @@
+{
+    "topics":[
+        {
+            "name": "hello",
+            "configs": [
+                "hello.yaml"
+            ]
+        }
+    ]
+}
