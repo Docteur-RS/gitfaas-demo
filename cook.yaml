@@ -3,7 +3,7 @@ kind: Job
 metadata:
   name: cook-lambda-{{RANDOM}}  # <== Replaced by a random string to provide always uniq Jobs (lambdas)
 spec:
-  ttlSecondsAfterFinished: 3600
+  ttlSecondsAfterFinished: 60
   backoffLimit: 1
   template:
     spec:
