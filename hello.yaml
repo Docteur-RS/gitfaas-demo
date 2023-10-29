@@ -8,8 +8,8 @@ spec:
   template:
     spec:
       containers:
-      - name: reverse
-        image: wingardiumleviosa/demo-gitfaas-replace:0.0.1
+      - name: cook
+        image: petrificustotalus/cook-gitfaas-demo:v0.0.1
         env:
         - name: PAYLOAD
           value: "{{PAYLOAD}}"        # <== Replaced by the message sent to this lambda
