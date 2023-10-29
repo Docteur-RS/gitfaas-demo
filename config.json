@@ -3,7 +3,7 @@
         {
             "name": "hello",
             "configs": [
-                "hello.yaml"
+                "cook.yaml"
             ]
         }
     ]
