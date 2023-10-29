@@ -15,7 +15,7 @@ spec:
           value: "{{PAYLOAD}}"        # <== Replaced by the message sent to this lambda
         - name: FUNCTION_UID
           value: "{{FUNCTION_UID}}"   # <== Replaced by a uniq UID used to post the lambdas response back to Gitfaas
-        - name: PYTHONUNBUFFERED:
+        - name: PYTHONUNBUFFERED
           value: "1"
         imagePullPolicy: Always
       restartPolicy: Never
