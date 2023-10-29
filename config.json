@@ -1,7 +1,7 @@
 {
     "topics":[
         {
-            "name": "hello",
+            "name": "cook",
             "configs": [
                 "cook.yaml"
             ]
