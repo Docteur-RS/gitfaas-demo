@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: replace-job-{{RANDOM}}  # <== Replaced by a random string to provide always uniq Jobs (lambdas)
+  name: cook-lambda-{{RANDOM}}  # <== Replaced by a random string to provide always uniq Jobs (lambdas)
 spec:
   ttlSecondsAfterFinished: 3600
   backoffLimit: 1
@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: cook
-        image: petrificustotalus/cook-gitfaas-demo:v0.0.1
+        image: petrificustotalus/cook-gitfaas-demo:0.0.1
         env:
         - name: PAYLOAD
           value: "{{PAYLOAD}}"        # <== Replaced by the message sent to this lambda
