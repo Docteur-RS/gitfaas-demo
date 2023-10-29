@@ -16,3 +16,4 @@ spec:
         - name: FUNCTION_UID
           value: "{{FUNCTION_UID}}"   # <== Replaced by a uniq UID used to post the lambdas response back to Gitfaas
       restartPolicy: Never
+      imagePullPolicy: Always
